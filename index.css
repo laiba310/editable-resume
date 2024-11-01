@@ -42,7 +42,17 @@
     border-radius: 10px;
     background-color: #e9f5ff;
   }
-
+  button{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e9f5ff;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 11rem;
+    width: 50%;
+  }
   .resume-section h3 {
     margin: 0;
     color: #0056b3;
@@ -82,14 +92,19 @@
 
   @media (max-width: 480px) {
     .personal-info {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
 
     h1.resume-title {
-      font-size: 2em;
+        font-size: 2em;
     }
 
     .resume-section h3 {
-      font-size: 1.2em;
+        font-size: 1.2em;
+    }
+
+    button {
+        margin-left: 0; /* Center button on very small screens */
+        width: 100%;
     }
 }
